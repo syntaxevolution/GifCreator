@@ -134,7 +134,7 @@ class GifCreator
             
 			for ($j = (13 + 3 * (2 << (ord($this->frameSources[$i] [ 10 ]) & 0x07))), $k = TRUE; $k; $j++) {
 			 
-				switch ($this->frameSources[$i] { $j }) {
+				switch ($this->frameSources[$i] [ $j ]) {
 				    
 					case '!':
                     
@@ -263,7 +263,7 @@ class GifCreator
 					$byte |= 0x80;
 					$byte &= 0xF8;
 					$byte |= (ord($this->frameSources[0] [ 10 ]) & 0x07);
-					$Locals_img { 9 } = chr($byte);
+					$Locals_img [ 9 ] = chr($byte);
 					$this->gif .= $Locals_ext.$Locals_img.$Locals_rgb.$Locals_tmp;
 				}
                 
@@ -273,7 +273,7 @@ class GifCreator
 				$byte |= 0x80;
 				$byte &= 0xF8;
 				$byte |= (ord($this->frameSources[$i] [ 10 ]) & 0x07);
-				$Locals_img { 9 } = chr($byte);
+				$Locals_img [ 9 ] = chr($byte);
 				$this->gif .= $Locals_ext.$Locals_img.$Locals_rgb.$Locals_tmp;
 			}
             
