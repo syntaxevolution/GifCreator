@@ -1,19 +1,19 @@
 {
-    "name": "sybio/gif-creator",
+    "name": "syntaxevolution/gifcreator",
     "type": "library",
     "description": "PHP class that creates animated GIF from multiple images",
     "keywords": ["gif", "animated", "creation", "encode", "PHP"],
-    "homepage": "https://github.com/Sybio/GifCreator",
+    "homepage": "https://github.com/SyntaxEvolution/GifCreator",
     "license": "MIT",
     "authors": [
         {
-            "name": "Clément Guillemain",
-            "homepage": "http://clementguillemain.fr",
+            "name": "Topher Lazarz",
+            "homepage": "https://www.syntaxevolution.com",
             "role": "Developer / Freelancer"
         }
     ],
     "require": {
-        "php": ">=5.3.0"
+        "php": ">=7.4.0"
     },
     "autoload": {
         "psr-0": { "GifCreator": "src" }
